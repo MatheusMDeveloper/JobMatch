@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="HTML-Layout-4-main/assets/css/layout.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>The Job Match - Sobre</title>
+</head>
+<body>
+  <header id="header">
+    <div id="logo-container">
+      <img id="logo" src="images/Design_sem_nome-removebg-preview.png" alt="logo" />
+    </div>
+    <button id="openMenu">&#9776;</button>
+    <nav id="menu">
+      <button id="closeMenu">X</button>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contacto">Contacto</a>
+      <button id="loginButton" type="button">Login</button>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <div id="inicio">
+      <div class="intro-container">
+        <img id="introImage" src="images/pexels-olly-3760809.jpg" alt="The Job Match">
+        <div class="intro-text">
+          <h1>Bem-vindo à The Job Match</h1>
+          <p>The Job Match é uma empresa dedicada a facilitar o processo de análise e encaminhamento de currículos, proporcionando soluções rápidas e eficientes para profissionais em busca de oportunidades no mercado de trabalho.</p>
+          <button id="enviarCurriculoButton">
+            <i class="fas fa-rocket"></i>
+          </button>
+          <p class="button-text">Enviar Currículo</p>
+        </div>
+      </div>
+    </div>
+    <div id="sobre">
+      <h1>Sobre o The Job Match</h1>
+      <div class="content">
+        <img id="introImage" src="images/pexels-teona-swift-6912818.jpg" alt="The Job Match">
+        <p>
+        <strong>The Job Match</strong> é uma empresa dedicada a ajudar profissionais a se destacarem no mercado de trabalho através de currículos bem elaborados e cartas de apresentação personalizadas. Nossa missão é proporcionar a melhor oportunidade de apresentação para cada candidato, garantindo que suas habilidades e experiências sejam destacadas de forma eficaz.
+        </p>
+      </div>
+    </div>
+    <div id="equipe">
+      <h1>Conheça a Equipe</h1>
+      <div class="equipe-container">
+        <div class="membro-equipe">
+          <img src="images/Leandro.jpg" alt="Leandro">
+          <p>Leandro</p>
+        </div>
+        <div class="membro-equipe">
+          <img src="images/Davi (1).jpg" alt="Davi">
+          <p>Davi</p>
+        </div>
+        <div class="membro-equipe">
+          <img src="images/Gustavo.jpg" alt="Gustavo">
+          <p>Gustavo</p>
+        </div>
+        <div class="membro-equipe">
+          <img src="images/Mayssa.jpg" alt="Mayssa">
+          <p>Mayssa</p>
+        </div>
+        <div class="membro-equipe">
+          <img src="images/Matheus.png" alt="Matheus">
+          <p>Matheus</p>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+
+
+  <footer id="contacto">
+    <h2>Contato</h2>
+    <p><strong> Email:</strong>  <a href="mailto:thejobmatch@gmail.pt">thejobmatch@gmail.pt</a></p>
+    <p><strong>Telefone:</strong>  <a href="tel:900800700">900 800 700</a></p>
+    <p><strong>Localização:</strong>  Bairro Alto, Lisboa</p>
+  </footer>
+
+
+
+
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  <div id="modalEnvioCurriculo" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Envio de Currículo</h2>
+      <form>
+        <label for="curriculoFile">Selecione seu currículo:</label>
+        <input type="file" id="curriculoFile" name="curriculoFile">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="HTML-Layout-4-main/assets/js/script.js"></script>
+</body>
+</html>
