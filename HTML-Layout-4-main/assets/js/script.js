@@ -3,6 +3,23 @@ window.addEventListener("scroll", function() {
 	header.classList.toggle('rolagem', this.window.scrollY > 10);
   });
   
+  document.getElementById("logo").addEventListener("mouseover", function() {
+	document.getElementById("logoTextContainer").style.display = "block";
+	setTimeout(function() {
+	  document.getElementById("logoTextContainer").style.opacity = "1";
+	  document.getElementById("logoTextContainer").style.transform = "translateX(10px)";
+	}, 10);
+  });
+  
+  document.getElementById("logo").addEventListener("mouseout", function() {
+	document.getElementById("logoTextContainer").style.opacity = "0";
+	document.getElementById("logoTextContainer").style.transform = "translateX(0)";
+	setTimeout(function() {
+	  document.getElementById("logoTextContainer").style.display = "none";
+	}, 300);
+  });
+  
+
   document.addEventListener('DOMContentLoaded', (event) => {
 	const logo = document.getElementById('logo-container')
 	const loginModal = document.getElementById('loginModal');
