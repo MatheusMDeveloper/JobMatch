@@ -47,7 +47,10 @@ header {
 }
 
 #logo-container {
+  position: relative;
   flex: 0 1 200px;
+  display: flex;
+  align-items: center;
 }
 
 #logo {
@@ -55,7 +58,34 @@ header {
   max-width: 100%;
   height: auto;
   max-height: 80px;
+  transition: transform 0.3s;
 }
+
+#logoTextContainer {
+  display: none;
+  margin-left: 0px;
+  text-align: left;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo-container:hover #logo {
+  transform: scale(1.1);
+}
+
+#logo-container:hover #logoTextContainer {
+  display: block;
+  opacity: 1;
+  transform: translateX(10px);
+}
+
 
 
 #openMenu,
